@@ -1,0 +1,13 @@
+.comments {
+  border: 2px solid darkgreen;
+  padding: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 10px;
+}
+.comment {
+  width: 47%;
+  box-shadow: 0 0 5px green;
+  padding: 5px;
+}
