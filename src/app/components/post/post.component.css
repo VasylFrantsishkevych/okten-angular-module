@@ -1,12 +1,12 @@
-.user__info {
+.post__info {
   width: 75px;
   height: 25px;
-  background: darkseagreen;
+  background: #bccebc;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
 }
-.user__info a {
+.post__info a {
   text-decoration: none;
 }

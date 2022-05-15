@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
 
-import {IUser} from "../interfaces";
+import {IUser, IUserDetails} from "../interfaces";
 import {urls} from "../constants";
 
 @Injectable({
@@ -14,5 +14,8 @@ export class UserService {
 
   getAll(): Observable<IUser[]> {
     return this.http.get<IUser[]>(urls.users);
+  }
+  getOne(id: string): Observable<IUserDetails> {
+    return this.http.get<IUserDetails>(urls.users + '/' + id);
   }
 }

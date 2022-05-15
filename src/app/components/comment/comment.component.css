@@ -1,12 +1,12 @@
-.user__info {
-  width: 75px;
+.comment__info {
+  width: 100px;
   height: 25px;
-  background: darkseagreen;
+  background: #8fc08f;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
 }
-.user__info a {
+.comment__info a {
   text-decoration: none;
 }

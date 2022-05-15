@@ -1,0 +1,13 @@
+.header {
+  height: 50px;
+  box-shadow: 0 0 15px 6px gainsboro;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 25px;
+}
+.header__name {
+  text-decoration: none;
+  font-weight: bold;
+}

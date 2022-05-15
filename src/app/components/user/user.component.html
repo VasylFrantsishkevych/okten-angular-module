@@ -1,2 +1,9 @@
 <div>{{user.id}}</div>
 <div>{{user.name}} -- {{user.username}}</div>
+<div class="user__info">
+<!--  За допомогою посилання-->
+<!--  <a routerLink="user_details/{{user.id}}">UserInfo</a>-->
+  <a [routerLink]="['user_details', user.id]" [state]="{data: user}">UserInfo</a>
+<!--  За допомоггою баттона-->
+<!--  <button (click)="navigateMe(user)">UserDetails</button>-->
+</div>
