@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {ActivatedRoute} from "@angular/router";
+
+import {IPostDetails} from "../../interfaces";
 
 @Component({
   selector: 'app-post-details',
@@ -7,9 +10,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PostDetailsComponent implements OnInit {
 
-  constructor() { }
+  postDetails: IPostDetails;
+
+  constructor(private activateRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.activateRoute.params.subscribe(value => {
+      let {state: {data}} = history;
+      this.postDetails = data;
+    })
   }
 
 }

@@ -1,5 +1,5 @@
 <div>{{comment.id}} - {{comment.name}}</div>
 <div class="comment__info">
-  <a [routerLink]="['comment_details', comment.id]">CommentInfo</a>
+  <a routerLink="comment_details/{{comment.id}}">CommentInfo</a>
 </div>
 
