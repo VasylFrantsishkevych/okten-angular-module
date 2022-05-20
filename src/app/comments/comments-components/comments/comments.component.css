@@ -1,0 +1,9 @@
+.comments {
+  display: flex;
+}
+.comments__name {
+  width: 40%;
+}
+.comments__details {
+  width: 60%;
+}

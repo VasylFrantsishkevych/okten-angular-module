@@ -1,0 +1,10 @@
+.posts {
+  width: 100%;
+  display: flex;
+}
+.posts__name {
+  width: 40%;
+}
+.posts__details {
+  width: 60%;
+}
