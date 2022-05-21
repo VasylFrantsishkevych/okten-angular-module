@@ -6,7 +6,10 @@ import {HomeComponent} from "./app-components/home/home.component";
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
-  {path: 'users', loadChildren:() => import('./modules').then(value => value.UsersModule)}
+  {path: 'users', loadChildren:() => import('./modules').then(value => value.UsersModule)},
+  {path: 'posts', loadChildren:() => import('./modules').then(value => value.PostsModule)},
+  {path: 'comments', loadChildren:() => import('./modules').then(value => value.CommentsModule)},
+  {path: 'todos', loadChildren:() => import('./modules').then(value => value.TodosModule)},
 ]
 
 @NgModule({

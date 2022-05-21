@@ -1,0 +1,14 @@
+.container {
+  border: 2px solid green;
+  margin-top: 25px;
+  display: flex;
+}
+.comments {
+  width: 50%;
+  padding: 10px;
+}
+.commentDetails {
+  width: 50%;
+  border-left: 2px solid green;
+  padding: 10px;
+}
