@@ -3,8 +3,8 @@
   display: flex;
 }
 .posts__name {
-  width: 40%;
+  width: 50%;
 }
 .posts__details {
-  width: 60%;
+  width: 50%;
 }
