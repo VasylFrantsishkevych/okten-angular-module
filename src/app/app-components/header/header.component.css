@@ -1,0 +1,16 @@
+.headers {
+  height: 50px;
+  box-shadow: 0 0 5px 3px darkseagreen;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 15px;
+}
+.headers a {
+  font-weight: bold;
+  font-size:25px;
+  text-decoration: none;
+}
+.headers a:hover {
+  color: greenyellow;
+}

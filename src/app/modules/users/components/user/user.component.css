@@ -1,0 +1,13 @@
+.user {
+  box-shadow: 0 0 5px green;
+  box-sizing: border-box;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.user a {
+  font-size: 20px;
+  text-decoration: none;
+}
+.user a:hover {
+  color: #7bcacc;
+}

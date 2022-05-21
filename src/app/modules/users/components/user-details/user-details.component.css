@@ -1,0 +1,12 @@
+.name {
+  text-align: center;
+}
+.contacts {
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: bold;
+}
+.address {
+  display: flex;
+  justify-content: center;
+}
