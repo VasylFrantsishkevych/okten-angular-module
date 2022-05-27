@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
-import {IToken, IUser} from "../interfaces";
 import {Observable} from "rxjs";
+
+import {IToken, IUser} from "../interfaces";
 import {urls} from "../constants";
 
 @Injectable({

@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import { CarsComponent } from './components/cars/cars.component';
-import { CarComponent } from './components/car/car.component';
 import { HeaderComponent } from './components/header/header.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
@@ -17,7 +16,6 @@ import {MainInterceptor} from "./main.interceptor";
   declarations: [
     AppComponent,
     CarsComponent,
-    CarComponent,
     HeaderComponent,
     LoginComponent,
     RegisterComponent,
