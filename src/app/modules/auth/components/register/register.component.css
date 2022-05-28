@@ -1,0 +1,8 @@
+.form {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  column-gap: 15px;
+  border: 2px solid darkseagreen;
+  padding: 20px;
+}

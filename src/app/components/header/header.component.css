@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+  padding: 20px;
+  box-shadow: 0 0 5px 3px green;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: greenyellow;
+}
