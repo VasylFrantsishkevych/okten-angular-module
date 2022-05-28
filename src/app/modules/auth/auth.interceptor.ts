@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import {
   HttpRequest,
   HttpHandler,
-  HttpEvent,
   HttpInterceptor, HttpErrorResponse
 } from '@angular/common/http';
 import {catchError, Observable, switchMap, throwError} from 'rxjs';
@@ -34,7 +33,7 @@ export class AuthInterceptor implements HttpInterceptor {
         if (res && res.error && res.status === 401) {
           return this.handle401Error(request, next)
         }
-        return throwError(() => new Error('Token invalid or expired'))
+        return throwError(() => new Error('Token invalid'))
       })
     )
   }
@@ -58,7 +57,7 @@ export class AuthInterceptor implements HttpInterceptor {
           this.isRefreshing = false;
           this.authService.deleteToken();
           this.router.navigate(['login']);
-          return throwError(() => new Error('token invalid or expired'))
+          return throwError(() => new Error('Token invalid'))
         })
       )
     }
