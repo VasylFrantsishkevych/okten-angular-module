@@ -3,6 +3,7 @@ import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {RegEx} from "../../../../constants";
 import {AuthService} from "../../services/auth.service";
 import {Router} from "@angular/router";
+import {TokenService} from "../../../../services";
 
 @Component({
   selector: 'app-login',
@@ -15,6 +16,7 @@ export class LoginComponent implements OnInit {
 
   constructor(
     private authService: AuthService,
+    private tokenService: TokenService,
     private router: Router,
   ) {
     this._createForm();
@@ -39,7 +41,7 @@ export class LoginComponent implements OnInit {
   login(): void {
     const dataLogin = this.form.value;
     this.authService.login(dataLogin).subscribe(value => {
-      this.authService.setTokens(value)
+      this.tokenService.setTokens(value)
       this.router.navigate(['cars']);
     })
   }

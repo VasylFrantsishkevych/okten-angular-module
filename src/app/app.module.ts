@@ -1,9 +1,10 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {HttpClientModule} from "@angular/common/http";
 
-import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
-import { LayoutComponent } from './layout/layout/layout.component';
+import {AppComponent} from './app.component';
+import {HeaderComponent} from './components/header/header.component';
+import {LayoutComponent} from './layout/layout/layout.component';
 import {AppRoutingModule} from "./app-routing.module";
 
 @NgModule({
@@ -12,12 +13,13 @@ import {AppRoutingModule} from "./app-routing.module";
     HeaderComponent,
     LayoutComponent
   ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-    ],
-  providers: [
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
   ],
+  providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
